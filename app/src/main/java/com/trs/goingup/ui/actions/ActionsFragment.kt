@@ -12,7 +12,9 @@ import com.trs.goingup.R
 import com.trs.goingup.data.AppDatabase
 import com.trs.goingup.report.EntryReport
 import com.trs.goingup.databinding.FragmentActionsBinding
+import com.trs.goingup.report.EmailUtil
 import com.trs.goingup.ui.dialog.DialogUtil
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ActionsFragment : Fragment() {
@@ -48,19 +50,19 @@ class ActionsFragment : Fragment() {
     }
 
     private fun clearEntries() {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             db.entryDao().removeAll()
         }
     }
 
     private fun deleteEntries() {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             db.entryDao().deleteAll()
         }
     }
 
     private fun sendReport() {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             EntryReport.sendReport(db)
         }
     }

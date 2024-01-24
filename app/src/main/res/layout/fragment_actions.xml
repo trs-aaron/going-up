@@ -5,10 +5,10 @@
     android:layout_margin="0dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="8dp"
-    android:paddingLeft="12dp"
-    android:paddingRight="12dp"
-    android:paddingTop="8dp"
+    android:paddingBottom="@dimen/padding_vertical_actions"
+    android:paddingLeft="@dimen/padding_horizontal_actions"
+    android:paddingRight="@dimen/padding_horizontal_actions"
+    android:paddingTop="@dimen/padding_vertical_actions"
     android:background="?backgroundColor"
     tools:context=".ui.entry.EntryListFragment">
 
@@ -29,6 +29,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
+        android:visibility="gone"
         android:id="@+id/actions_button_2"
         android:background="?colorPrimary"
         android:foreground="?attr/selectableItemBackground"

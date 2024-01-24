@@ -60,6 +60,6 @@ interface EntryDao {
     @Query("SELECT * FROM entry_detail")
     suspend fun getAllDetail(): List<EntryDetail>
 
-    //@Query("SELECT * FROM entry_summary")
-    //suspend fun getAllSummary(): List<EntrySummary>
+    @Query("SELECT * FROM entry_summary")
+    suspend fun getAllSummary(): List<EntrySummary>
 }

@@ -8,34 +8,30 @@ import java.sql.Time
 @DatabaseView(
     viewName = "entry_summary",
     value = """
-    SELECT id , value, date, time, entered, transmitted,
-    (
-        SELECT COUNT(*)
-        FROM ENTRY as e1
-        WHERE e1.date = entry.date AND e1.value = entry.value  AND e1.entered <= entry.entered
-    ) as dayCount,
+    SELECT DISTINCT date, value, count(id) as count,
     (   
         SELECT time
-        FROM ENTRY as e2
-        WHERE e2.date = entry.date AND e2.value = entry.value AND e2.entered <= entry.entered
-        ORDER BY e2.entered ASC
+        FROM ENTRY as e1
+        WHERE e1.date = entry.date AND e1.value = entry.value
+        ORDER BY e1.entered ASC
         LIMIT 1
-    ) as initialEntryTime,
+    ) as first,
     (
         SELECT time
-        FROM ENTRY as e3
-        WHERE e3.date = entry.date AND e3.value = entry.value AND e3.entered < entry.entered
-        ORDER BY e3.entered DESC
+        FROM ENTRY as e2
+        WHERE e2.date = entry.date AND e2.value = entry.value
+        ORDER BY e2.entered DESC
         LIMIT 1
-    ) as previousEntryTime
-    FROM ENTRY as entry
-    ORDER BY entered DESC
+    ) as last
+    FROM entry as entry
+    GROUP BY value, date
+    ORDER BY date, value
  """)
 @TypeConverters(Converters::class)
 data class EntrySummary(
     val value: String,
     val date: Date,
     val count: Int,
-    val firstEntryTime: Time,
-    val lastEntryTime: Time
+    val first: Time,
+    val last: Time
 )

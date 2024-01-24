@@ -5,4 +5,5 @@
     <color name="brand_white">#ECF0F1</color>
     <color name="brand_black">#424949</color>
     <color name="brand_grey">#424949</color>
+    <color name="launcher_background">#5D443C</color>
 </resources>

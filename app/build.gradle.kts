@@ -37,6 +37,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    packaging {
+        resources {
+            pickFirsts.add("META-INF/LICENSE.md")
+            pickFirsts.add("META-INF/NOTICE.md")
+        }
+    }
 }
 
 dependencies {
@@ -51,7 +57,8 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
-    implementation("javax.mail:mail:1.5.0-b01")
+    implementation("com.sun.mail:android-mail:1.6.7")
+    implementation("com.sun.mail:android-activation:1.6.7")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

@@ -13,6 +13,7 @@ import com.trs.goingup.data.AppDatabase
 import com.trs.goingup.data.EntryDetail
 import com.trs.goingup.databinding.FragmentEntryListBinding
 import com.trs.goingup.ui.dialog.DialogUtil
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class EntryListFragment : Fragment() {
@@ -44,14 +45,14 @@ class EntryListFragment : Fragment() {
     }
 
     private fun deleteEntry(entry: EntryDetail) {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             db.entryDao().deleteById(entry.id)
             loadEntries()
         }
     }
 
     private fun loadEntries() {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.Main) {
             viewModel.entries.apply {
                 value = db.entryDao().getAllDetail()
             }

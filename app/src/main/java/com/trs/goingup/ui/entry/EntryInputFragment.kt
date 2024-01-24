@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.trs.goingup.data.AppDatabase
 import com.trs.goingup.databinding.FragmentEntryInputBinding
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class EntryInputFragment : Fragment() {
@@ -69,7 +70,7 @@ class EntryInputFragment : Fragment() {
     }
 
     private fun createEntry(id: String) {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             db.entryDao().insert(id)
         }
     }
