@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.GoingUp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_white</item>
+        <item name="colorSecondary">@color/brand_white</item>
+        <item name="colorSecondaryVariant">@color/brand_white</item>
+        <item name="colorOnSecondary">@color/brand_black</item>
+        <item name="backgroundColor">@color/brand_white</item>
+        <item name="colorOnBackground">@color/brand_black</item>
+        <item name="colorSurface">@color/brand_white</item>
+        <item name="colorOnSurface">@color/brand_black</item>
+        <item name="colorError">@color/brand_white</item>
+        <item name="colorOnError">@color/brand_black</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.actions.ActionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/entry_input_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?colorSurface"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="@dimen/padding_input_display_vertical"
+            android:paddingLeft="@dimen/padding_input_display_horizontal"
+            android:paddingRight="@dimen/padding_input_display_horizontal"
+            android:paddingTop="@dimen/padding_input_display_vertical"
+            android:minLines="1"
+            android:maxLines="1"
+            android:textColor="?colorOnSurface"
+            android:textSize="@dimen/text_size_display" />
+
+        <TableLayout
+            android:id="@+id/entry_input_num_pad"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:stretchColumns="*"
+            android:background="?backgroundColor">
+
+            <TableRow
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/entry_input_button_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginRight="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_7"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_8"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginLeft="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_9"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/entry_input_button_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginRight="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_4"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_5"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginLeft="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_6"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/entry_input_button_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginRight="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_1"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_2"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/border_size_input_num_pad_button"
+                    android:layout_marginLeft="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_3"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/entry_input_button_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_clear"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_m" />
+
+                <Button
+                    android:id="@+id/entry_input_button_0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_0"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_l" />
+
+                <Button
+                    android:id="@+id/entry_input_button_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border_size_input_num_pad_button"
+                    android:background="?colorPrimary"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/entry_input_button_label_submit"
+                    android:textColor="?colorOnPrimary"
+                    android:textSize="@dimen/text_size_button_m" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

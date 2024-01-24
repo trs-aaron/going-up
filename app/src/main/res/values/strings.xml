@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Going Up</string>
+    <string name="title_entry_list">Entries</string>
+    <string name="title_entry_input">Input</string>
+    <string name="title_actions">Actions</string>
+    <string name="action_1_button_label">Send Report</string>
+    <string name="action_1_dialog_title">Send Report</string>
+    <string name="action_1_dialog_message">Process and send report?</string>
+    <string name="action_2_button_label">Action 2</string>
+    <string name="action_2_dialog_title">Action 2</string>
+    <string name="action_2_dialog_message">Do action 2?</string>
+    <string name="action_3_button_label">Delete All</string>
+    <string name="action_3_dialog_title">Delete All</string>
+    <string name="action_3_dialog_message">Delete all entries?</string>
+    <string name="action_4_button_label">Clear All</string>
+    <string name="action_4_dialog_title">Clear All</string>
+    <string name="action_4_dialog_message">Clear all entries?</string>
+    <string name="entry_input_button_label_0">0</string>
+    <string name="entry_input_button_label_1">1</string>
+    <string name="entry_input_button_label_2">2</string>
+    <string name="entry_input_button_label_3">3</string>
+    <string name="entry_input_button_label_4">4</string>
+    <string name="entry_input_button_label_5">5</string>
+    <string name="entry_input_button_label_6">6</string>
+    <string name="entry_input_button_label_7">7</string>
+    <string name="entry_input_button_label_8">8</string>
+    <string name="entry_input_button_label_9">9</string>
+    <string name="entry_input_button_label_clear">Clear</string>
+    <string name="entry_input_button_label_submit">Enter</string>
+    <string name="entry_list_item_delete_button_description">delete entry</string>
+</resources>

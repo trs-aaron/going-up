@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_entry_input">
+
+    <fragment
+        android:id="@+id/navigation_entry_list"
+        android:name="com.trs.goingup.ui.entry.EntryListFragment"
+        android:label="@string/title_entry_list"
+        tools:layout="@layout/fragment_entry_list" />
+
+    <fragment
+        android:id="@+id/navigation_entry_input"
+        android:name="com.trs.goingup.ui.entry.EntryInputFragment"
+        android:label="@string/title_entry_input"
+        tools:layout="@layout/fragment_entry_input" />
+
+    <fragment
+        android:id="@+id/navigation_third"
+        android:name="com.trs.goingup.ui.actions.ActionsFragment"
+        android:label="@string/title_actions"
+        tools:layout="@layout/fragment_actions" />
+
+</navigation>

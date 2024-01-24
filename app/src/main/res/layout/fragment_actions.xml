@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp"
+    android:background="?backgroundColor"
+    tools:context=".ui.entry.EntryListFragment">
+
+    <Button
+        android:id="@+id/actions_button_1"
+        android:background="?colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/action_1_button_label"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_button_m"
+        android:padding="@dimen/padding_actions_button"
+        android:layout_marginBottom="@dimen/margin_vertical_actions_button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/margin_vertical_actions_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/actions_button_2"
+        android:background="?colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/action_2_button_label"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_button_m"
+        android:padding="@dimen/padding_actions_button"
+        android:layout_marginBottom="@dimen/margin_vertical_actions_button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/margin_vertical_actions_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/actions_button_1"/>
+
+    <Button
+        android:id="@+id/actions_button_3"
+        android:background="?colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/action_3_button_label"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_button_m"
+        android:padding="@dimen/padding_actions_button"
+        android:layout_marginBottom="@dimen/margin_vertical_actions_button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/margin_vertical_actions_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/actions_button_2"/>
+
+    <Button
+        android:id="@+id/actions_button_4"
+        android:background="?colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/action_4_button_label"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_button_m"
+        android:padding="@dimen/padding_actions_button"
+        android:layout_marginBottom="@dimen/margin_vertical_actions_button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/margin_vertical_actions_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/actions_button_3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
